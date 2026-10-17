@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MediaGrab</string>
+    <string name="url_hint">Paste a video or audio link</string>
+    <string name="download">Download</string>
+    <string name="cancel">Cancel</string>
+    <string name="update_engine">Update download engine</string>
+    <string name="legal_note">Only download content you own, that is licensed for download, or that the site and your local law allow you to save. DRM-protected streams are not supported.</string>
+</resources>
