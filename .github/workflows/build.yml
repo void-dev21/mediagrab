@@ -16,7 +16,10 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - uses: android-actions/setup-android@v3
+      # The ubuntu-latest runner already ships with the Android SDK (ANDROID_HOME),
+      # so no separate SDK setup step is needed. Accept licenses to be safe.
+      - name: Accept Android SDK licenses
+        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
 
       - uses: gradle/actions/setup-gradle@v4
         with:
